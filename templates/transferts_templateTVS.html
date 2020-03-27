@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the transferts_init() hook (in hooks/transferts.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="transferts-sur_le_site-<%%VALUE(id)%%>" class="transferts-sur_le_site"><%%VALUE(sur_le_site)%%></td>
+		<td id="transferts-par_le_membre-<%%VALUE(id)%%>" class="transferts-par_le_membre"><%%VALUE(par_le_membre)%%></td>
+		<td id="transferts-jour_heure-<%%VALUE(id)%%>" class="transferts-jour_heure"><%%VALUE(jour_heure)%%></td>
+		<td id="transferts-du_bac-<%%VALUE(id)%%>" class="transferts-du_bac"><%%VALUE(du_bac)%%></td>
+		<td id="transferts-vers_bac-<%%VALUE(id)%%>" class="transferts-vers_bac"><%%VALUE(vers_bac)%%></td>
+		<td id="transferts-quantite-<%%VALUE(id)%%>" class="transferts-quantite text-right"><%%VALUE(quantite)%%></td>

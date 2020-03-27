@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the depots_init() hook (in hooks/depots.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="depots-sur_le_site-<%%VALUE(id)%%>" class="depots-sur_le_site"><%%SELECT%%><%%VALUE(sur_le_site)%%><%%ENDSELECT%%></td>
+		<td id="depots-dans_le_bac-<%%VALUE(id)%%>" class="depots-dans_le_bac"><%%SELECT%%><%%VALUE(dans_le_bac)%%><%%ENDSELECT%%></td>
+		<td id="depots-jour_heure-<%%VALUE(id)%%>" class="depots-jour_heure"><%%SELECT%%><%%VALUE(jour_heure)%%><%%ENDSELECT%%></td>
+		<td id="depots-qte_vmh-<%%VALUE(id)%%>" class="depots-qte_vmh text-right"><%%SELECT%%><%%VALUE(qte_vmh)%%><%%ENDSELECT%%></td>
+		<td id="depots-qte_bds-<%%VALUE(id)%%>" class="depots-qte_bds text-right"><%%SELECT%%><%%VALUE(qte_bds)%%><%%ENDSELECT%%></td>
+		<td id="depots-niveau_du_bac-<%%VALUE(id)%%>" class="depots-niveau_du_bac"><%%SELECT%%><%%VALUE(niveau_du_bac)%%><%%ENDSELECT%%></td>

@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the site_compostage_init() hook (in hooks/site_compostage.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="site_compostage-nom_du_site-<%%VALUE(id)%%>" class="site_compostage-nom_du_site"><%%SELECT%%><%%VALUE(nom_du_site)%%><%%ENDSELECT%%></td>
+		<td id="site_compostage-adresse_postale-<%%VALUE(id)%%>" class="site_compostage-adresse_postale"><%%SELECT%%><%%VALUE(adresse_postale)%%><%%ENDSELECT%%></td>
+		<td id="site_compostage-acces_au_site-<%%VALUE(id)%%>" class="site_compostage-acces_au_site"><%%SELECT%%><img src="<%%GOOGLEMAPTHUMB(acces_au_site)%%>" style="max-width: 50px; max-height: 50px; " ><%%ENDSELECT%%></td>
+		<td id="site_compostage-type_de_site-<%%VALUE(id)%%>" class="site_compostage-type_de_site"><%%SELECT%%><%%VALUE(type_de_site)%%><%%ENDSELECT%%></td>
+		<td id="site_compostage-nom_du_responsable-<%%VALUE(id)%%>" class="site_compostage-nom_du_responsable"><%%SELECT%%><%%VALUE(nom_du_responsable)%%><%%ENDSELECT%%></td>
+		<td id="site_compostage-email_du_responsable-<%%VALUE(id)%%>" class="site_compostage-email_du_responsable"><a href="mailto:<%%VALUE(email_du_responsable)%%>"><%%VALUE(email_du_responsable)%%></a></td>

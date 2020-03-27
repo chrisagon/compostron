@@ -1,0 +1,66 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sur le site</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="sur_le_site<%%RND1%%>"><%%COMBOTEXT(sur_le_site)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Par le membre</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="par_le_membre-readonly<%%RND1%%>"><%%COMBOTEXT(par_le_membre)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Dans le bac</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="dans_le_bac<%%RND1%%>"><%%COMBOTEXT(dans_le_bac)%%></span></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Jour & heure du d&#233;p&#244;t</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(jour_heure)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Qte vmh</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(qte_vmh)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Qte bds</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(qte_bds)%%></div>
+			</div>
+		</div>
+		<div class="form-group" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Niveau du bac</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(niveau_du_bac)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>

@@ -1,0 +1,15 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the intervention_init() hook (in hooks/intervention.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="intervention-demande_par-<%%VALUE(id)%%>" class="intervention-demande_par"><%%VALUE(demande_par)%%></td>
+		<td id="intervention-date_demande-<%%VALUE(id)%%>" class="intervention-date_demande"><%%VALUE(date_demande)%%></td>
+		<td id="intervention-realise_par-<%%VALUE(id)%%>" class="intervention-realise_par"><%%VALUE(realise_par)%%></td>
+		<td id="intervention-date_realisation-<%%VALUE(id)%%>" class="intervention-date_realisation"><%%VALUE(date_realisation)%%></td>
+		<td id="intervention-pour_site-<%%VALUE(id)%%>" class="intervention-pour_site"><%%VALUE(pour_site)%%></td>
+		<td id="intervention-pour_bac-<%%VALUE(id)%%>" class="intervention-pour_bac"><%%VALUE(pour_bac)%%></td>
+		<td id="intervention-type_intervention-<%%VALUE(id)%%>" class="intervention-type_intervention"><%%VALUE(type_intervention)%%></td>
+		<td id="intervention-statut_intervention-<%%VALUE(id)%%>" class="intervention-statut_intervention"><%%VALUE(statut_intervention)%%></td>
